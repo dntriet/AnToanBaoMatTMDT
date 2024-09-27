@@ -1,0 +1,31 @@
+body {
+    background-image: url('shoe.jpg');
+}
+
+table,td,th {
+    background-color: white;
+    padding: auto;
+    margin: auto;
+    margin-top: 10%;
+    width: 40%;
+    height: auto;
+    border-spacing: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+th{
+    font-size: 24px;
+}
+input[type="text"] {
+    font-family: Roboto, San-Serif;
+    width: 99%;
+    height: 40px; 
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+}

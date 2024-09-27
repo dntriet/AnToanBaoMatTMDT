@@ -1,0 +1,102 @@
+/* Refactoring code. Modified 10/13/2023 by Quyen */
+/* add box-shadow to admin table. Modified 10/18/2023 by Quyen */
+table{
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-table th, .admin-table td,
+.store-table th, .store-table td{
+    border-bottom: 1px solid var(--table-border);
+    padding: 10px !important;
+}
+
+td{
+   color: var(--light-text);
+   background-color: #fff;
+}
+
+/* table image */
+.table-img{
+    background-image: url(https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/009930cf-e4e1-4e59-992d-fc5b42a14d95/dunk-low-shoes-T4Ckpv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+}
+
+/* start: style Scrollbar */
+.admin-table::-webkit-scrollbar, 
+.store-table::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.admin-table::-webkit-scrollbar-thumb, 
+.store-table::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.admin-table:hover::-webkit-scrollbar-thumb, 
+.store-table:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+    /* end: style scrollbar */
+
+    
+/* -------------------------- */
+/* start: ADMIN TABLE. Modified 10/12/2023 by Quyen */
+.admin-table{
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid var(--table-border);
+
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.admin-table th{
+    background-color: #F9F9FC;
+}
+    
+.admin-table tr:last-child td{
+    border-bottom: none;
+}
+
+    /* action column */
+.action i{
+    padding-right: 5px;
+
+    color: var(--light-text);
+    font-size: 14px;
+}
+
+.action i:hover{
+    color: var(--admin-primary);
+}
+
+/* end: ADMIN TABLE */
+
+
+/* -------------------------- */
+/* start: STORE TABLE. Modified 10/12/2023 by Quyen */
+.store-table{
+    margin: 10px;
+    width: 100%;
+    overflow: auto;
+    /* box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important; */
+}
+
+    /* tr when hover */
+.store-table tr:hover:not(.store-table tr:first-child){
+    cursor: pointer;
+    background-color: var(--table-border);
+}
+
+/* end: STORE TABLE */

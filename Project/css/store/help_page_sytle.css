@@ -1,0 +1,31 @@
+.contentBox {
+    background-color: #FFFFFF;
+    padding: 20px 100px 100px 100px;
+}
+
+.contentBox h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #E96D00;
+}
+
+.questionBox {
+    margin-bottom: 50px;
+}
+
+.questionBox, .contactBox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.centerBox {
+    text-align: center;
+    width: 200px;
+}
+
+.contactBox img {
+    width: 100px;
+    height: 100px;
+}

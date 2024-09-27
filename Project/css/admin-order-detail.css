@@ -1,0 +1,167 @@
+:root {
+    --border-box-info: 1px solid #cfc7c7;
+    --icon-bgcolor: #4A69E2;
+}
+/*general main section*/
+.admin-order-detail{
+    flex-grow: 2;
+    min-width: 400px;
+    padding: 30px;
+}
+
+
+.customer-infomation,
+.order-infomation {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+/*customer infomation*/
+/***header*/
+.order-status {
+    background-color: #37cd70;
+    color: #ffff;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/***date*/
+.date-order {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+/***box-change_status-print-save*/
+.box-change_status-print-save {
+    margin-left: 869px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+/***change status*/
+.change-status{
+    margin: 10px;
+    margin-left: 0px;
+    background-color: #F4F2F2;
+    border-radius: 8px;
+    width: 200px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    position: relative; 
+}
+.option-status {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #F4F2F2;
+    width: 200px;
+    z-index: 10;
+}
+
+.option-status li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.option-status li:hover {
+    background-color: #d8d8d8;
+}
+
+.change-status:hover .option-status {
+    display: block;
+}
+
+/***icon print, save*/
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #F4F2F2;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/***3 boxes customer info*/
+.info-customer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 50px;
+}
+
+.box-info {
+    position: relative;
+    display: flex;
+    border: var(--border-box-info);
+    border-radius: 4px;
+    width: 350px;
+    flex-direction: row;
+    margin-right: 24px;
+    margin-top: 10px;
+}
+
+.icon-info{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: var(--icon-bgcolor);
+    color: #fff;
+    margin: 5px 15px 0 5px;
+    display: flex !important;
+    justify-content: center;
+}
+
+.info {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.header-info {
+    font-weight:bolder;
+    font-size:120%;
+}
+
+.col-checkbox {
+    width: 15px;
+}
+
+/*order cost*/
+.order-cost{
+    min-width: 50px !important;
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 880px;
+}
+.order-cost td, tr{
+    border: none;
+    color: #000 !important;
+}
+
+.order-cost td.cost {
+    text-align: right;
+    font-weight: bolder;
+}
+
+.order-cost tr.total-cost {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.total-cost td.total {
+    color:#FF0000 !important;
+}

@@ -1,0 +1,208 @@
+/**
+ * Refactoring code. Modified 10/13/2023 by Quyen
+ *
+ * @format
+ */
+
+/* ************GENERAL************ */
+p a,
+li a,
+div a {
+  color: black;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-icon--item a,
+.nav-link--item a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link--item a,
+.sub-nav-link--item a,
+.nav-icon--item a {
+  cursor: pointer;
+}
+
+/* ************STYLING************ */
+/* header-container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  border-bottom: solid 1px #c8c8c8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* logo */
+.nav-logo {
+  margin-top: 5px;
+  margin-right: 200px;
+}
+
+.nav-logo a img {
+  width: 120px !important;
+}
+
+/* icon */
+.nav-icon {
+  display: flex;
+  gap: 12px;
+  padding-left: 0;
+  justify-content: end;
+  min-width: 30%;
+  align-items: center;
+}
+
+.nav-icon ul {
+  padding: 6px 5px 10px;
+}
+
+.nav-icon--item.cart {
+  padding-top: 5px;
+  padding-left: 7px;
+}
+
+.primary-nav.account {
+  padding: 0;
+}
+
+/* home, shop, category,.... */
+.nav-link {
+  display: flex !important;
+  gap: 30px;
+  margin-top: 5px;
+}
+
+/* ************POP-UP SUB-NAV************ */
+.primary-nav {
+  /* width: fit-content;
+  height: fit-content; */
+  /* overflow: hidden; */
+  /* transition: width 0.3s; */
+  position: relative;
+}
+
+.primary-nav a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* hide sub-nav when not hovered */
+/* sub-nav have height=0 when not hovered */
+ul.sub-nav {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 200%;
+  right: 50%;
+  transform: translate(50%, -3px);
+  background-color: white;
+  padding: 20px 10px 10px 10px;
+  transition: all 0.3s;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+ul.sub-nav:hover {
+  box-shadow: 3px 3px 7px -1px;
+}
+
+/* sub-nav have width=130px when being hovered */
+.primary-nav:hover .sub-nav {
+  opacity: 1;
+  pointer-events: all;
+  top: 115%;
+}
+
+/* show nav's underline when being hover*/
+.hover-underline a {
+  position: relative;
+}
+
+.hover-underline a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--orange);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* **********NAV ICON********* */
+/* hover color orange */
+.hover-orange {
+  transition: all 0.3s;
+}
+
+.hover-orange:hover {
+  color: var(--orange);
+}
+
+/* **********STORE LAYOUT: MAIN SECTION********* */
+.main-section {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.main-section-header {
+  margin: 20px 0 20px 30px;
+  text-align: center;
+}
+
+.mainsection-body {
+  margin: 50px;
+}
+
+/* search bar */
+.search-box {
+  height: 35px;
+  display: flex;
+  cursor: pointer;
+  /* padding: 10px 10px; */
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: center;
+  border: none;
+  transition: all 0.3s;
+}
+
+.search-box:hover {
+  padding: 10px 10px;
+}
+
+.search-box:hover {
+  border: 1px solid var(--table-border);
+}
+.search-box:hover input {
+  width: 200px;
+}
+
+.search-box input {
+  width: 0;
+  outline: none;
+  border: none;
+  transition: 0.8s;
+  background: transparent;
+}

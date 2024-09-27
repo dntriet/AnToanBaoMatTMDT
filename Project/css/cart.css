@@ -1,0 +1,165 @@
+/** @format */
+body {
+  padding: 20px;
+  padding-top: 0;
+}
+
+/* general */
+.gray-text {
+  color: var(--light-text);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.cart-body {
+  margin: 30px 30px 0 30px;
+  display: flex;
+  gap: 50px;
+}
+
+/* *******cart-header****** */
+.cart-header {
+  margin: 20px 0 20px 30px;
+}
+
+.cart-header a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+}
+
+/* ******cart-body****** */
+.product-list--cart {
+  border-spacing: 0 10px;
+  width: 65%;
+}
+
+/* product list header */
+.product-list--header th {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+
+/* product */
+.product {
+  background-color: #d9d9d9;
+}
+
+.product td {
+  padding: 10px;
+}
+
+/* product-infor */
+.product-infor {
+  display: flex;
+  align-items: center;
+}
+
+.product-img {
+  width: 70px;
+}
+
+.product-descr {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+
+/* amount */
+.product input {
+  min-width: 30px;
+  max-width: 50px;
+  border: none;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.product input::-webkit-outer-spin-button,
+.product input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.amount-btn {
+  background-color: #d9d9d9;
+  border: solid 1px;
+  padding: 2px 7px;
+  /* cursor: pointer; */
+}
+
+/* remove */
+.remove-btn {
+  background-color: #d9d9d9;
+  border: none;
+  /* cursor: pointer; */
+  transition: all 0.2s;
+  font-weight: 100;
+}
+
+.remove-btn:hover {
+  color: var(--orange);
+}
+
+/* *******submit-section******** */
+.submit-section {
+  margin: auto;
+  width: 26%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* header */
+.submit-section h4 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* redeem */
+.redeem-section {
+  gap: 15px;
+  display: flex;
+}
+
+.redeem-section input,
+.redeem-section button {
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.redeem-section button {
+  border: none;
+}
+
+/* sub total; total */
+.sub-total,
+.shipping,
+.total {
+  justify-content: space-between;
+}
+
+/* checkout-btn */
+.checkout-bnt {
+  width: 100% !important;
+  transition: all 0.3s;
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+.checkout-bnt:hover {
+  background-color: var(--orange);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/Forgetpass.css">
+    <link rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+    <form action="Forgetpass.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    <img src="../../img/logo.png">
+                </td>
+                
+            </tr>
+            <tr>
+                <th>
+                    <b>Quên mật khẩu ?</b>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                   <p>Nhập số điện thoại để nhận hướng dẫn lấy lại mật khẩu.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="phonenumber" placeholder=" Số điện thoại" required
+                    oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại.')"
+                    oninput="this.setCustomValidity('')">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <?php if (isset($error) && $error): ?>
+                        <p style="color: red;"><?php echo $error; ?></p>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"><button type="submit" class="btn btn-confirm">Tiếp tục</button></th>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">
+                    <a href="Login.html" onclick="regturnback()">Quay lại</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Refactoring code. Modified 10/13/2023 by Quyen */
+
+.nav-admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+
+    width: 240px;
+    height: 100vh;
+    background-color: var(--nav-admin-bg); 
+
+    font-size: 16px;
+}
+
+.nav-admin a{
+  color: #fff;
+}
+
+.nav-admin-logo {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-admin-logo img {
+    width: 50px;
+}
+
+.nav-admin-menu {
+    position: relative;
+    margin-top: 15px;
+    width: 196px;
+  }
+  
+  .nav-admin-menu li {
+    margin-bottom: 5px;
+  }
+  
+  .nav-admin-menu li a {
+    display: block;
+    padding: 15px;
+    background-color: var(--nav-admin-bg); 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  /* Change background-color when hover on navigation. Modified 10/18/2023 by Quyen */
+  .nav-admin-menu li a:hover:not(a.active),
+  .nav-admin-account #logout:hover{
+    background-color: rgba(84, 160, 232, 0.2); 
+  }
+
+  .nav-admin-menu li a.active {
+    background-color: var(--admin-primary);
+  }
+
+  .nav-admin-account {
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .nav-admin-account #logout {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3 ease;
+    width: 180px;
+    margin-top: 12px;
+  }
+
+  .nav-admin-account #account {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .nav-admin-account #account img {
+    width: 40px;
+    margin-right: 10px;
+  }

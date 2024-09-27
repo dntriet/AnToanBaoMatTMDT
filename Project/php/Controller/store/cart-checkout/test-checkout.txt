@@ -1,0 +1,12 @@
+test momo:
+9704 0000 0000 0018
+NGUYEN VAN A
+03/07
+OTP
+
+------------------------
+Nếu không mở được trang thanh toán momo, check xem có bị lỗi:
+60: SSL certificate problem: self signed certificate in certificate chain
+Cách xử lý: https://www.youtube.com/watch?v=Om9JSauo9xQ 
+
+

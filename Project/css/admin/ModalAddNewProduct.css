@@ -1,0 +1,53 @@
+/* style modal add new. modified 10/22/2023 by Quyen */
+.add-new-container .modal-header,
+.add-new-container .modal-body,
+.add-new-container .modal-footer{
+    border: none;
+}
+
+.add-new-container .modal-title{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.modal-header .btn-close{
+    margin: 0;
+    float: right;
+}
+
+.add-new-container .modal-footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* form>.row.g-2{
+    margin: 0 5px;
+} */
+
+.form-label{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.image-box{
+    border: 1px solid var(--table-border);
+    height: 150px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#product-description{
+    height: 50px;
+}
+
+.product-size-table td{
+    padding: 0 7px 15px !important;
+}
+
+.product-size-table th{
+    padding: 0 7px !important;
+}
+

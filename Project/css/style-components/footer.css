@@ -1,0 +1,46 @@
+/* Refactoring code. Modified 10/13/2023 by Quyen */
+.FooterBox__one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0 50px;
+    padding: 10px 0;
+}
+
+.FooterBox__one h3 {
+    padding-bottom: 10px;
+}
+
+.FooterBox__one p {
+    padding-top: 10px;
+
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.FooterBox__one a:hover {
+    color: var(--orange);
+}
+
+.span-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterBox__two hr {
+    width: 100%;
+}
+
+.FooterBox__two__rightpayment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: self-end;
+
+    margin: 15px;
+}
+
+.FooterBox__two__rightpayment img {
+    width: 49.375px;
+    height: 33.125px;
+}

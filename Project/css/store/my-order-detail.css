@@ -1,0 +1,227 @@
+:root {
+    --border-box-info: 1px solid #cfc7c7;
+    --icon-bgcolor: #4A69E2;
+}
+/*main section*/
+.my-order-detail {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    margin-bottom: 15px;
+}
+/*TITLE ORDER DETAIL + STATUS + DATE*/
+.title-order-detail {    
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.order-status {
+    color: #ffff;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.order-status.success {
+    background-color: #37cd70;
+}
+
+.order-status.pending {
+    background-color: #FFC416;
+}
+
+.order-status.cancel {
+    background-color: #FF0000;
+}
+
+#date-create-order {
+    position: absolute;
+    right: 130px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*Style for div of 3 box infomation*/
+.info-customer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 80px;
+}
+/*Style for each box*/
+.box-info {
+    position: relative;
+    display: flex;
+    border: var(--border-box-info);
+    border-radius: 4px;
+    width: 350px;
+    flex-direction: row;
+    margin-right: 24px;
+}
+
+/*icon in each box*/
+.icon-info{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: var(--icon-bgcolor);
+    color: #fff;
+    margin: 5px 15px 0 5px;
+    display: flex !important;
+    justify-content: center;
+}
+
+/*infomation in each box*/
+.info {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.header-info {
+    font-weight:bolder;
+    font-size:120%;
+}
+/*-----*/
+
+/*TABLE DETAIL ORDER*/
+.store-table {
+    width: 90% !important;
+    margin: 50px !important;
+    margin-left: 80px !important;
+}
+
+/*box order cost*/
+.order-cost{
+    min-width: 50px !important;
+    width: 300px;
+    margin-left: 880px;
+}
+.order-cost td, tr{
+    border: none;
+    color: #000 !important;
+    padding-top: 15px;
+}
+
+.order-cost td.cost {
+    text-align: right;
+    font-weight: bolder;
+}
+
+.order-cost tr.total-cost {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.total-cost td.total {
+    color:#FF0000 !important;
+}
+/*------*/
+
+/*div of 3 button*/
+.order-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 200px;
+
+}
+
+/*Style for each button*/
+.order-option {
+    width: 200px;    
+    padding: 5px 10px;
+    margin-right: 150px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.order-option:hover:not(.cancel-order) {
+    background-color: #e6e6e6;
+}
+
+/*Style for button "Hủy đơn hàng"*/
+.cancel-order {
+    border: none;
+    background-color:#D00000 !important;
+    color: #fff;
+}
+/*Modal Report*/
+#modal-report-container {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal-report {
+    background-color: #fff;
+    max-width: 500px;
+    position: relative;
+    top: 200px;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#modal-report #close-report{
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+#modal-report #customer-email {
+    width: 450px;
+    height: 25px;
+    border: 1px solid #e6e6e6;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+#modal-report #report-textfield {
+    resize: vertical;
+    width: 450px;
+    font-family: Roboto, San-Serif;
+    font-size: 15px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+#modal-report #btn-submit-report {
+    font-size: 15px;
+    width: 120px;
+    margin: 10px;
+    margin-left: 330px;
+    padding: 3px 0 3px 0;
+    border: 0.5px solid #bcbcbc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#modal-report #btn-submit-report:hover {
+    background-color: #e6e6e6;
+}

@@ -1,0 +1,57 @@
+/* Refactoring code. Modified 10/13/2023 by Quyen */ 
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.pagination a{
+ padding: 2px 13px;
+  text-decoration: none;
+  border-radius: 20%;
+  margin: 5px;
+}
+
+/* delete border of admin pagination. modified 10.27 by Quyen */
+.pagination a:not(.admin){
+  border: 1.5px solid #000000;
+}
+
+.pagination.admin a{
+  border: none;
+}
+
+/* change orange to black when a is active. modified 10.27 by Quyen */
+.pagination a.active {
+  background-color: #000;
+  color: white;
+}
+
+.ellipsis { 
+padding: 15px 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  color: #000 !important;}
+
+/* admin -> change color */
+
+.pagination.admin a.active {
+  background-color: var(--admin-primary);
+}
+
+#loadMoreProductList {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+#loadMoreProductList:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}

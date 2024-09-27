@@ -1,0 +1,56 @@
+/* style display of calendar and export button */
+.section_top-content.dashboard{
+    justify-content: end ;
+}
+
+.dashboard .btn-container{
+    display: flex;
+}
+
+/* font, margin of p */
+p.container-heading{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+p.container-heading:not(.card-title){
+    margin: 20px 5px 5px 5px;
+}
+
+/* set shadow to card of bootstrap */
+.card{
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+/* modal box of overview-container */
+.overview-container{
+    padding: 0 10px;
+}
+
+.overview-container .card{
+    width: 22%;
+}
+
+/* center all p that not have class "container-heading */
+p:not(.container-heading){
+    text-align: center;
+}
+
+/* style p has class "number-display */
+.number-display{
+    font-size: 24px;
+}
+
+.todo-container .number-display{
+    color: var(--admin-primary);
+}
+
+.best-seller .admin-table table{
+    min-width: 400px !important;
+}
+
+.best-seller .admin-table .table-img{
+    width: 60px;
+    height: 60px;
+}

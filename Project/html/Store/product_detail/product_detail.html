@@ -1,0 +1,536 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="../../../css/style-components/base.css" />
+    <link rel="stylesheet" href="../../../css/style-components/header.css" />
+    <link rel="stylesheet" href="../../../css/style-components/footer.css" />
+    <!-- <link rel="stylesheet" href="../../../css/style-components/homepage.css" /> -->
+    <link rel="stylesheet" href="../../../css/product_detail.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <ul class="header">
+      <!-- logo -->
+      <li class="nav-logo">
+        <a href="#"><img src="../../../img/logo.png" /></a>
+      </li>
+
+      <!-- link (home, shop, category,....) -->
+      <ul class="nav-link">
+        <li class="nav-link--item hover-underline"><a href="#">HOME</a></li>
+        <li class="nav-link--item hover-underline"><a href="#">SHOP</a></li>
+
+        <!-- category sub navigation -->
+        <li class="nav-link--item primary-nav hover-underline a">
+          <a href="#">CATEGORY</a>
+          <ul class="sub-nav">
+            <li class="sub-nav--item hover-underline">
+              <a href="#">SUB-CATEGORY</a>
+            </li>
+            <li class="sub-nav--item hover-underline">
+              <a href="#">SUB-CATEGORY</a>
+            </li>
+            <li class="sub-nav--item hover-underline">
+              <a href="#">SUB-CATEGORY</a>
+            </li>
+            <li class="sub-nav--item hover-underline">
+              <a href="#">SUB-CATEGORY</a>
+            </li>
+            <li class="sub-nav--item hover-underline">
+              <a href="#">SUB-CATEGORY</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-link--item hover-underline"><a href="#">PAGES</a></li>
+        <li class="nav-link--item hover-underline"><a href="#">BLOGS</a></li>
+      </ul>
+
+      <!-- icon (accoutn, cart) -->
+      <ul class="nav-icon">
+        <!-- search -->
+        <li class="nav-icon--item">
+          <a>
+            <span class="material-symbols-outlined"> search </span>
+          </a>
+        </li>
+
+        <!-- account -->
+        <ul class="nav-icon--item primary-nav">
+          <a>
+            <span class="material-symbols-outlined"> account_circle </span>
+          </a>
+          <ul class="sub-nav">
+            <li class="sub-nav--item hover-underline">
+              <a href="#">TÀI KHOẢN</a>
+            </li>
+            <li class="sub-nav--item hover-underline">
+              <a href="#">QUẢN LÝ</a>
+            </li>
+            <li class="sub-nav--item hover-underline">
+              <a href="#">LOG OUT</a>
+            </li>
+          </ul>
+        </ul>
+
+        <!-- cart -->
+        <li class="nav-icon--item">
+          <a>
+            <span class="material-symbols-outlined"> shopping_bag </span>
+          </a>
+        </li>
+      </ul>
+    </ul>
+
+    <!--Product Detail Nav-->
+    <!-- PRODUCT DETAIL'S BODY: START -->
+    <div class="product-detail--body">
+      <div class="product-nav">
+        <h1>For Shoes</h1>
+        <nav class="product-detail-link" aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">For Shoes</a></li>
+            <li><a class="breadcrumb-item" href="#">Sneaker</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Adidas</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-info">
+        <!--Khung giới thiệu ảnh sản phẩm-->
+        <div class="product-image">
+          <div class="product-main-img">
+            <img src="../../../img/blog_img/blog2.webp" />
+          </div>
+        </div>
+
+        <!--Khung giới thiệu thông tin sản phẩm-->
+        <div class="product-info">
+          <div class="product-name"><h2>Adidas</h2></div>
+          <div class="product-price"><h3>500000 VND</h3></div>
+          <div class="product-rating">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+            ><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+            ><ion-icon name="star"></ion-icon>
+          </div>
+          <div class="product-intro">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non sit
+              adipiscing at habitasse lorem volutpat id. Ipsum urna tortor
+              tempus us blandit. Vel amet malesuada vulputate auctor enim vitae.
+              Enim mi et, fermentum imperdiet. Faucibus tellus a tincidunt arcu
+              proin mattis egestas varius amet. Tortor tellus lobortis ut
+              pretium nunc elit, ornare.
+            </p>
+          </div>
+
+          <div class="product-size">
+            <h4>Kích cỡ:</h4>
+
+            <div class="size">
+              <button class="btn-size">XXS</button>
+              <button class="btn-size">XS</button>
+              <button class="btn-size">S</button>
+              <button class="btn-size">M</button>
+              <button class="btn-size">L</button>
+              <button class="btn-size">XL</button>
+            </div>
+          </div>
+          <div class="product-quantity">
+            <h4>Số lượng:</h4>
+            <div class="quantity">
+              <span class="minus change-amount-btn">-</span>
+              <span class="number">1</span>
+              <span class="plus change-amount-btn">+</span>
+            </div>
+          </div>
+          <div class="shopping-btn">
+            <button class="wishlist-btn">Thêm vào giỏ hàng</button>
+            <button class="cart-btn">Mua ngay</button>
+          </div>
+        </div>
+      </div>
+      <!--Khung mô tả và đánh giá-->
+      <!-- TAG BTN: start -->
+      <nav>
+        <div class="nav nav-tabs description" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active tag-btn"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true">
+            Mô tả
+          </button>
+          <button
+            class="nav-link tag-btn"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false">
+            Chi tiết
+          </button>
+          <button
+            class="nav-link tag-btn"
+            id="nav-contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-contact"
+            type="button"
+            role="tab"
+            aria-controls="nav-contact"
+            aria-selected="false">
+            Review
+          </button>
+        </div>
+      </nav>
+      <!-- TAG BTN: start -->
+
+      <!-- TAG-CONTENT: start -->
+      <div class="tab-content" id="nav-tabContent">
+        <!-- description's content: start -->
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            autem quibusdam dolorum dolorem pariatur dolores, non ipsum ad nulla
+            magnam veniam dignissimos vero nam alias minima repellat optio,
+            nihil accusantium?
+          </p>
+        </div>
+        <!-- description's content: end -->
+
+        <!-- detail's content:start -->
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab">
+          <div class="tab-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              autem quibusdam dolorum dolorem pariatur dolores, non ipsum ad
+              nulla magnam veniam dignissimos vero nam alias minima repellat
+              optio, nihil accusantium? quam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
+              eius illum consequuntur quae minus iusto voluptatibus inventore
+              exercitationem, similique distinctio repellat veniam animi
+              aspernatur laborum laboriosam iste adipisci consectetur
+            </p>
+          </div>
+        </div>
+        <!-- detail's content:end -->
+
+        <!-- review's content: start -->
+        <div
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab">
+          <!-- header: start -->
+          <div class="rating-header">
+            <h4>Đánh giá</h4>
+
+            <!-- star: start -->
+            <div class="rating">
+              <!-- rating scrore -->
+              <div class="rating-score">
+                <h5>5</h5>
+                <div class="rating-icon">
+                  <ion-icon name="star"></ion-icon
+                  ><ion-icon name="star"></ion-icon
+                  ><ion-icon name="star"></ion-icon
+                  ><ion-icon name="star"></ion-icon
+                  ><ion-icon name="star"></ion-icon>
+                </div>
+              </div>
+              <!-- amount of review -->
+              <div class="people-rate-num">
+                <small> 40 lượt đánh giá</small>
+              </div>
+            </div>
+            <!-- star: start -->
+          </div>
+          <!-- header: end -->
+
+          <!-- PERSONAL RATING: Star -->
+          <div class="review-list">
+            <div class="person-review">
+              <!-- star: start -->
+              <div class="review-star">
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <span>5.0</span>
+              </div>
+              <!-- star: end -->
+
+              <!-- comment: start -->
+              <div class="review-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus tristique in tellus diam, metus sit. Quis venenatis,
+                  neque arcu accumsan sollicitudin aliquet nunc. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Eos dicta ducimus
+                  adipisci assumenda? Magnam velit repudiandae nihil, ipsum ad
+                  architecto neque est quidem, ratione ullam fuga ipsa?
+                  Officiis, ipsum maiores?
+                </p>
+                <a href="#" class="link">Xem Thêm</a>
+              </div>
+              <!-- comment: end -->
+
+              <!-- img: start -->
+              <div class="review-img">
+                <div class="img-container">
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                </div>
+                <div class="name-date">
+                  <div class="name">
+                    <p>Linh. DTM</p>
+                  </div>
+                  <div class="date">
+                    <p>4/11/2023</p>
+                  </div>
+                </div>
+              </div>
+              <!-- img: end -->
+            </div>
+            <div class="person-review">
+              <!-- star: start -->
+              <div class="review-star">
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <span>5.0</span>
+              </div>
+              <!-- star: end -->
+
+              <!-- comment: start -->
+              <div class="review-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus tristique in tellus diam, metus sit. Quis venenatis,
+                  neque arcu accumsan sollicitudin aliquet nunc. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Eos dicta ducimus
+                  adipisci assumenda? Magnam velit repudiandae nihil, ipsum ad
+                  architecto neque est quidem, ratione ullam fuga ipsa?
+                  Officiis, ipsum maiores?
+                </p>
+                <a href="#" class="link">Xem Thêm</a>
+              </div>
+              <!-- comment: end -->
+
+              <!-- img: start -->
+              <div class="review-img">
+                <div class="img-container">
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                </div>
+                <div class="name-date">
+                  <div class="name">
+                    <p>Linh. DTM</p>
+                  </div>
+                  <div class="date">
+                    <p>4/11/2023</p>
+                  </div>
+                </div>
+              </div>
+              <!-- img: end -->
+            </div>
+            <div class="person-review">
+              <!-- star: start -->
+              <div class="review-star">
+                <ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon
+                ><ion-icon name="star"></ion-icon>
+                <span>5.0</span>
+              </div>
+              <!-- star: end -->
+
+              <!-- comment: start -->
+              <div class="review-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus tristique in tellus diam, metus sit. Quis venenatis,
+                  neque arcu accumsan sollicitudin aliquet nunc. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Eos dicta ducimus
+                  adipisci assumenda? Magnam velit repudiandae nihil, ipsum ad
+                  architecto neque est quidem, ratione ullam fuga ipsa?
+                  Officiis, ipsum maiores?
+                </p>
+                <a href="#" class="link">Xem Thêm</a>
+              </div>
+              <!-- comment: end -->
+
+              <!-- img: start -->
+              <div class="review-img">
+                <div class="img-container">
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                  <img
+                    class="img-rv"
+                    src="https://www.side-step.co.za/media/catalog/product/cache/f8df61b05911d279f59846ba6dcb8724/a/d/add3483cw-adidas-niiteball-white-fz5741-v1_jpg.jpg" />
+                </div>
+                <div class="name-date">
+                  <div class="name">
+                    <p>Linh. DTM</p>
+                  </div>
+                  <div class="date">
+                    <p>4/11/2023</p>
+                  </div>
+                </div>
+              </div>
+              <!-- img: end -->
+            </div>
+          </div>
+          <!-- PERSONAL RATING: End -->
+        </div>
+        <!-- review's content: end -->
+      </div>
+      <!-- TAG-CONTENT: end -->
+    </div>
+    <!-- PRODUCT DETAIL'S BODY: END -->
+
+    <script>
+      // add amount
+      const plus = document.querySelector(".plus"),
+        minus = document.querySelector(".minus"),
+        number = document.querySelector(".number");
+      let a = 1;
+      plus.addEventListener("click", () => {
+        a++;
+        number.innerText = a;
+      });
+      minus.addEventListener("click", () => {
+        if (a > 1) {
+          a--;
+          number.innerText = a;
+        }
+      });
+    </script>
+
+    <div class="FooterBox">
+      <div class="FooterBox__one">
+        <div class="FooterBox__one__left">
+          <h3>Our Team</h3>
+          <p>Home</p>
+          <p>Shop</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+        <div class="FooterBox__one__center">
+          <h3>Explore</h3>
+          <p>FAQ</p>
+          <p>Shipping & Return</p>
+          <p>Store Policy</p>
+          <p>Payment methods</p>
+        </div>
+        <div class="FooterBox__one__right">
+          <h3>Follow us</h3>
+          <p class="span-container">
+            Facebook<span><i class="fa-brands fa-square-facebook"></i></span>
+          </p>
+          <p class="span-container">
+            Instagram<span><i class="fa-brands fa-instagram"></i></span>
+          </p>
+        </div>
+      </div>
+      <div class="FooterBox__two">
+        <hr />
+        <div class="FooterBox__two__rightpayment">
+          <p>2022 ALL RIGHT RESERVE</p>
+          <div>
+            <img
+              src="../img/footer_image/visa.png"
+              alt=""
+              width="49.375px"
+              height="33.125px" />
+            <img
+              src="../img/footer_image/paypal.png"
+              alt=""
+              width="49.375px"
+              height="33.125px" />
+            <img
+              src="../img/footer_image/mastercard.png"
+              alt=""
+              width="49.375px"
+              height="33.125px" />
+            <img
+              src="../img/footer_image/momo.png"
+              alt=""
+              width="33.125px"
+              height="33.125px" />
+            <img
+              src="../img/footer_image/napas.png"
+              alt=""
+              width="33.125px"
+              height="33.125px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+/** @format */
+
+:root {
+  --line-border-color: 1px solid #b1b1b1;
+  --breadscrumb-text-color: #8f8f8fa4;
+  --breadscumb-text-active: #e96d00;
+}
+/*Style left-navigation --start*/
+.navigation-account {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 215px;
+  height: auto;
+  padding: 30px;
+  border-right: var(--line-border-color);
+}
+
+.navigation-account li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.navigation-account li a:hover:not(a.active) {
+  font-weight: bolder;
+}
+
+.navigation-account li a.active {
+  font-weight: bolder;
+}
+
+#title-TaiKhoan {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+/*Style left-navigation --end*/
+
+/*Style main section --start*/
+.section {
+  display: flex;
+  width: 100%;
+  
+}
+
+/*breadcrumb*/
+.breadcrumb-my-order {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--breadscrumb-text-color);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.breadcrumb-my-order li a {
+  color: var(--breadscrumb-text-color);
+}
+.breadcrumb-my-order li a:hover {
+  color: var(--breadscumb-text-active);
+}
+.breadcrumb-current-page {
+  color: var(--breadscumb-text-active);
+}
+
+.list-orders {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 82%;
+  min-width: 400px;
+  height: 100vh;
+  padding: 30px 80px;
+}
+
+/*.store-table{
+  margin: 50px 0;
+  overflow: auto;
+}*/
+.store-table.orders-list {
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+
+.link-to-detail{
+  color: #000;
+}
+.link-to-detail:hover {
+  color: #e96d00;
+}
+
+
+#pagination-my-orders {
+  margin: 0 auto;
+}
+/*Style main section --end*/
+
+hr{
+  margin: 0;
+}
+
+ul{
+  margin-bottom: 0;
+  padding: 0;
+}

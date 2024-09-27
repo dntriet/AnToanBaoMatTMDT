@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f7fcb1a9ac.js"crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/admin-navigation.css">
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="../../css/pagination.css">
+    <link rel="stylesheet" href="../../css/admin/ProductsManagement.css">
+    <link rel="stylesheet" href="../../css/admin/ModalAddNewProduct.css">
+    <link rel="stylesheet" href="../../css/admin/ModalAlert.css">
+    <title>Quản lý sản phẩm</title>
+
+</head>
+<body>
+    <!-- start: admin navigation -->
+    <div class="nav-container">
+        <div class="nav-admin">
+            <a href="#" class="nav-admin-logo">
+                <!-- change logo color into white. modified 10/18/2023 by Quyen -->
+                <img src="../../img/logo-white.png" alt="logo"> 
+                <h1>LOGO</h1>
+            </a>
+    
+            <ul class="nav-admin-menu">
+                <li><a href="#">Về Cửa Hàng</a></li>
+                <li><a href="#">Thống Kê</a></li>
+                <li><a href="#">Danh Mục</a></li>
+                <li><a href="#" class="active">Sản Phẩm</a></li>
+                <li><a href="#">Đơn Hàng</a></li>
+                <li><a href="#">Khách Hàng</a></li>
+                <li><a href="#">Nhân Viên</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+    
+            <div class="nav-admin-account">
+                <a href="#" id="account">
+                        <img src="../../img/user.png" alt="Your account">
+                        <p>Nguyễn Văn A</p>
+                </a>
+                <a href="#" id="logout">Đăng Xuất</a>
+            </div>
+        </div>  
+    </div>
+    <!-- end: admin navigation -->
+    
+
+    <!-- Change html into php. Modified 10/18/2023 by Quyen -->
+
+
+    <!-- start: main section -->
+    <div class="section">
+        <h2 class="section_heading">
+           Sản phẩm
+        </h2>
+        
+        <!-- start: search bar, button section -->
+        <div class="section_top-content">
+
+            <div class="top-content left">
+                <div class="admin-search-container">
+                    <div class="search-bar-box">
+                        <input type="text" id="search" placeholder="Tìm kiếm..." class="form-control ">
+                        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+
+                <button class="btn-admin btn-filter">
+                    <i class="fa-solid fa-filter"></i>Bộ lọc
+                </button>
+            </div>
+            
+            <div class="top-content right">
+                <button class="btn-admin btn-export">
+                    <i class="fa-solid fa-download"></i>Export
+                </button>
+            
+                <button class="btn-admin btn-add" data-bs-toggle="modal" data-bs-target="#add-new">
+                    <i class="fa-solid fa-plus"></i>Thêm mới
+                </button>
+            </div>
+        </div>
+        <!-- end: search bar, button section -->
+
+        <!-- start of Modal of Add new elements-->
+        <!-- Modified 10/22/2023 by Quyen -->
+        <div class="modal fade modal-lg add-new-container" id="add-new" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="#add-product" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="add-product">Thêm mới sản phẩm</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" class="add-new-product" >
+                            <div class="row g-2">
+                                <!-- start of 1st column -->
+                                <div class="col">
+                                    <label for="product-name" class="form-label">Tên giày</label>
+                                    <input type="text" id="product-name" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Hãy nhập tên giày.
+                                    </div>
+
+                                    <label for="product-price" class="form-label">Giá</label>
+                                    <input type="number" id="product-price" class="form-control" min="0" step="1">
+
+                                    <div class="row g-2">
+                                        <div class="col">
+                                            <label for="product-size" class="form-label">Kích thước</label>
+                                            <select id="product-size" class="form-select">
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                                <option value="XL">XL</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col">
+                                            <label for="product-quantity" class="form-label">Số lượng</label>
+                                            <input type="number" id="product-quantity" class="form-control" min="0" step="1">
+                                        </div>
+                                    </div>
+
+                                    <label for="product-name" class="form-label">Hình ảnh</label>
+                                    <input type="file" id="product-name" class="form-control">
+                                    <div class="image-box"></div>
+                                </div>
+                                <!-- end of 1st column -->
+                                <!-- start of 2nd column -->
+                                <div class="col">
+                                    <label for="product-color" class="form-label">Màu sắc</label>
+                                    <input type="text" id="product-color" class="form-control">
+                                    
+                                    <label for="product-category" class="form-label">Phân loại</label>
+                                    <select id="product-category" class="form-select">
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="giày thể thao">Giày thể thao</option>
+                                        <option value="giày nữ">Giày nữ</option>
+                                        <option value="giày nam">Giày nam</option>
+                                    </select>
+
+                                    <label for="product-description" class="form-label">Mô tả</label>
+                                    <textarea id="product-description" class="form-control"></textarea>
+
+                                </div>
+                                <!-- end of 2nd column -->
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-cancel admin" data-bs-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-confirm admin" >Thêm mới</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- end of Modal of Add new elements-->
+
+        <!-- start: section_botton-content -->
+        <div class="section_bottom-content">
+            <!-- start: admin table -->
+            <div class="admin-table">
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>...</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><div class="table-img"></div></td>
+                        <td> Giày ... </td>
+                        <td>10000đ</td>
+                        <td>...</td>
+                        <td class="action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#add-new"><i class="fa-solid fa-pen"></i></a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#alert"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- end: admin table -->
+
+            <!-- start: pagination in admin -->
+            <div class="pagination admin">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <!-- end: pagination in admin -->
+        </div>
+
+    </div>
+    <!-- end: main section -->
+
+    <!-- start of warning message when click del-btn -->
+    <div class="modal fade modal-sm alert-container" id="alert" tabindex="-1" aria-labelledby="#delete-alert" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="delete-alert">Xác nhận xóa sản phẩm?</h1>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-outline-secondary border border-secondary">Hủy</button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of warning message when click del-btn -->
+
+
+   
+    
+</body>
+</html>

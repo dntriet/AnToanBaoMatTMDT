@@ -1,0 +1,238 @@
+/*----- Modified 10/13/2023 by Quyen */
+/* Reset default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set base font and color */
+body {
+    font-family: Roboto, San-Serif !important; 
+    font-size: 14px !important;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* Set root variables */
+:root {
+    /* store */
+    --orange: #E96D00;
+
+    /* admin */
+    --admin-primary:#54A0E8;
+    --nav-admin-bg: #212F3C;
+    --table-border: #ddd;
+    --light-text: #667085;
+}
+
+/* Reused selectors */
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 28px !important;
+    font-weight: bold !important;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* reused form elements: button, search-bar, input, select,... */
+/* refactoring code. modified 10/14/2023 by Quyen */
+/* ---------------start: button */
+.btn{
+    width: 220px;
+    height: 40px;
+    margin: 5px 2px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.style-btn{
+    width: 220px;
+    height: 40px;
+    margin: 5px 2px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/******* store button */
+.btn-confirm{
+    color: #fff;
+    background-color: #000;
+}
+
+    /* button confirm */
+.btn-confirm:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+
+    /* button cancel */
+.btn-cancel{
+    border: 1.6px solid #000;
+    background-color: #fff;
+}
+
+.btn-cancel:hover{
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+/******* admmin button */
+.btn-admin{
+    width: 100px;
+    height: 35px;
+    margin: 5px 2px;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+
+
+    /* button export */
+.btn-export{
+    background-color: rgba(84, 160, 232, 0.2);
+    color: #1F5588;
+}
+
+.btn-export:hover{
+    opacity: 0.7;
+}
+
+    /* button add */
+.btn-add{
+    color: #fff;
+    background-color: var(--admin-primary);
+}
+
+.btn-add:hover{
+    opacity: 0.7;
+}
+
+    /* button filter */
+.btn-filter,
+.btn-calendar{
+    border: 1px solid var(--table-border);
+    color: var(--light-text);
+    background-color: #fff;
+}
+
+.btn-filter:hover,
+.btn-calendar:hover{
+    border: 1px solid var(--admin-primary);
+    color: var(--admin-primary);
+}
+
+.btn-admin i{
+    margin-right: 5px;
+}
+
+/* start of admin button in modal */
+.btn.admin{
+    width: 220px;
+    height: 40px;
+    margin: 5px 2px;
+    border: none;
+    cursor: pointer;
+}
+
+    /* button confirm */
+.btn-confirm.admin{
+    color: #fff;
+    background-color: var(--admin-primary);
+}
+
+.btn-confirm.admin:hover{
+    opacity: 0.7;
+}
+
+    /* button cancel */
+.btn-cancel.admin{
+    border: 1px solid var(--light-text);
+    color: var(--light-text);
+    background-color: #fff;
+}
+
+.btn-cancel.admin:hover{
+    color: var(--admin-primary);
+    border-color: var(--admin-primary);
+}
+/* end of admin button in modal */
+
+/* ---------------end: button */
+
+
+/* ---------------start: search bar */
+.search-bar{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+}
+
+.search-field {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 30px;
+}
+
+.btn-search{
+    position: absolute;
+    right: 0;
+
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+.admin .search-field{
+    border: 1px solid var(--table-border);
+    border-radius: 7px;
+}
+
+.btn-search:hover{
+    color: var(--orange); 
+}
+
+/* .admin .btn-search:hover{
+    color: var(--admin-primary); 
+}  */
+/* ---------------end: search bar */
+
+/* style input, select */
+/* input:not(input[type="checkbox"]), select{
+    width: 300px;
+    height: 35px;
+    margin: 5px;
+}
+
+textarea{
+    margin: 5px;
+} */
+
+
+
+

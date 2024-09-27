@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/Signup.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <script src="Signup.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return signup()">
+        <table>
+            <tr>
+                <td>
+                    <h1>TẠO TÀI KHOẢN</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Họ và tên*</td>
+            </tr>
+            <tr>
+                <th><input type="text" id="name" placeholder="Họ và tên*" required
+                    oninvalid="this.setCustomValidity('Vui lòng nhập họ và tên.')"
+                    oninput="this.setCustomValidity('')"></th>
+            </tr>
+            <tr>
+                <td>Số điện thoại*</td>
+            </tr>
+            <tr>
+                <th><input type="text" id="phonenumber" placeholder="Số điện thoại*" required
+                    oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại.')"
+                    oninput="this.setCustomValidity('')"></th>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Thông tin đăng nhập</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>Mật khẩu*</td>
+            </tr>
+            <tr>
+                <th><input type="password" id="password" placeholder="Mật khẩu*" required
+                    oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu.')"
+                    oninput="this.setCustomValidity('')"></th>
+            <tr>
+
+            <tr>
+                <td>Nhập lại mật khẩu*</td>
+            </tr>
+            <tr>
+                <th><input type="password" id="repassword" placeholder="Nhập lại mật khẩu*" required
+                    oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu.')"
+                    oninput="this.setCustomValidity('')"></th>
+            <tr>
+                <td><input type="checkbox" id="accept"> Đồng ý với "Điều kiện sử dụng" và "Chính sách bảo mật"</td>
+
+            </tr>
+            <tr>
+                <th><button type="submit" class="btn btn-confirm" onclick="register()">Đăng kí</button></th>
+            </tr>
+            <tr>
+                <td>
+                    <span style="margin-left: 50px; color: rgb(0, 0, 209);">Điều kiện sử dụng</span>
+                    <span style="margin-left: 150px ;color: rgb(0, 0, 209)">Chính sách bảo mật</span>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+
+</html>

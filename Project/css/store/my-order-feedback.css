@@ -1,0 +1,131 @@
+
+/*Style main section*/
+.my-order-feedback {
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+/*star feedback*/
+.rating-star {
+    display: flex;
+    font-size: 20px;
+    margin: 15px;
+    margin-left: 20px;
+}
+
+.rating-star .stars {
+    margin-left: 15px;
+}
+
+.rating-star .stars input {
+    display: none;
+}
+
+.stars label {
+    color: #e6e6e6;
+    float: right;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+
+.stars input:not(:checked) ~ label:hover,
+.stars input:not(:checked) ~ label:hover ~ label{
+    color: #fec984;
+    cursor: pointer;
+}
+
+.stars input:checked ~ label {
+    color: #ff9c1a;
+}
+/*text area feedback*/
+.input-feedback {
+    width: 430px;
+    height: 150px;
+    border-radius: 6px;
+    border-color: #e2e2e2;
+    margin: 15px;
+    resize: none;
+    padding: 10px;
+    font-family: Roboto, San-Serif;
+    font-size: 15px;
+}
+
+.input-feedback::placeholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    font-family: Roboto, San-Serif;
+}
+
+/*button submit feedback*/
+.submit-feedback {
+    width: 150px;
+    padding: 10px 15px;
+    margin-left: 750px;
+    text-align: center;
+    border: none;
+    background-color: #FFC416;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.form-rating h2{
+    margin-bottom: 15px;
+}
+
+.my-order-rating .table-img {
+    width: 120px !important;
+    height: 100px !important;
+}
+
+.my-order-rating {
+    border: 1px solid #d8d8d8;
+    margin: 20px;
+    padding: 15px;
+    width: 150px;
+}
+
+.my-order-rating tr, td {
+    padding: 10px;
+}
+.my-order-rating th{
+    padding: 10px;
+    border-bottom: 1px solid #d8d8d8;;
+}
+.tbl-fb-row {
+    border-bottom: 1px solid #d8d8d8;
+}
+.td-img {
+    width: 130px;
+}
+
+.btn-input-feedback {
+    display: block;
+    background-color: #ffff;
+    width: 140px;
+    padding: 5px 20px;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    color: var(--orange);
+    transition: 0.3s ease;
+    margin-top: 37px;
+}
+.btn-input-feedback:hover{
+    color: #ffff;
+    background-color: var(--orange);
+}
+
+.btn-input-feedback.done {
+    background-color: #dddd;   
+    cursor: context-menu;
+}
+.btn-input-feedback.done:hover{
+    color: var(--orange);
+}
+
